@@ -1,16 +1,51 @@
-# flutter_watchlist
+# 📈 Stock Swap (Flutter Watchlist App)
 
-A new Flutter project.
+A modern Flutter application for managing stock watchlists, built using **Clean Architecture + BLoC**.
+Designed for scalability, performance, and fintech-grade development.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+# 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+* 📊 Stock Watchlist Management
+* 🔄 Reorder & Save Watchlist
+* 🧠 Clean Architecture (Scalable)
+* ⚡ BLoC State Management
+* 🎨 Modern UI (Material 3)
+* 🌐 Ready for API Integration (Real-time stocks)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# 🏗️ Project Structure
+
+```bash
+lib/
+├── core/              # Common utilities, themes, constants
+│   ├── theme/         # AppTheme, colors, typography
+│   ├── utils/         # Helpers, extensions
+│
+├── data/              # Data layer (API, local storage)
+│   ├── models/        # JSON models
+│   ├── repositories/  # Repository implementations
+│
+├── domain/            # Business logic layer
+│   ├── models/        # Entities (e.g., Stock)
+│   ├── repositories/  # Abstract repository contracts
+│
+├── presentation/      # UI layer
+│   ├── bloc/          # BLoC state management
+│   ├── screens/       # UI screens
+│   ├── widgets/       # Reusable components
+│
+├── main.dart          # App entry point
+```
+
+---
+
+# 🧠 Architecture Explained
+
+This app follows **Clean Architecture**:
+
+### 1. Presentation Layer
+
+* Handles
